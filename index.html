@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Onest&family=Orbitron:wght@500&family=Roboto+Condensed:wght@500&family=Suranna&display=swap"
+        rel="stylesheet">
+    <script src="assets/script.js" defer></script>
+    <title>Geometric Figure</title>
+</head>
+
+<body>
+
+    <h1>GEOMETRIC FIGURES</h1>
+    <div class="calculator_container">
+        <!--Square Section-->
+        <div>
+
+            <div class="img_container">
+                <img src="assets/img/Rectangle 1square.svg" alt="">
+            </div>
+
+            <section>
+                <h2>
+                    Calculate area and perimeter of a <b>square</b>.
+                </h2>
+                <form action="" id="squareForm">
+                    <div>
+                        <label for="squareInput">How long is each side.</label>
+                        <input type="number" id="squareInput">
+                    </div>
+                    <p id="squarePerimeter"></p>
+                    <p id="squareArea"></p>
+                    <div>
+                        <button type="button" onclick="perimeterSquare()">Perimeter</button>
+                        <button type="button" onclick="areaSquare()">Area</button>
+                        <button type="button" onclick="resetForm('squareForm')">Reset</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <!--Circle Section-->
+        <div>
+
+            <div class="img_container">
+                <img src="assets/img/Ellipse 1circle.svg" alt="">
+            </div>
+
+            <section>
+
+                <h2>
+                    Calculate area and perimeter of a <b>circle</b>.
+                </h2>
+                <form action="" id="circleForm">
+                    <div>
+                        <label for="squareInput">How long is the radius.</label>
+                        <input type="number" id="cicleRadius">
+                    </div>
+                    <p id="circlePerimeter"></p>
+                    <p id="circleArea"></p>
+                    <div>
+                        <button type="button" onclick="perimeterCircle()">Perimeter</button>
+                        <button type="button" onclick="areaCircle()">Area</button>
+                        <button type="button" onclick="resetForm('circleForm')">Reset</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+        <!--Triangle Section-->
+        <div>
+
+            <div class="img_container">
+                <img src="assets/img/Polygon 1triangle.svg" alt="">
+            </div>
+
+            <section>
+                <h2>
+                    Calculate area and perimeter of a <b>triangle</b>.
+                </h2>
+                <form action="" id="triangleForm">
+                    <div class="multi-input">
+                        <div>
+                            <label for="first_side">How long is the first side.</label>
+                            <input type="number" id="first_side">
+                        </div>
+                        <div>
+                            <label for="second_Side">How long is the second side.</label>
+                            <input type="number" id="second_Side">
+                        </div>
+                        <div>
+                            <label for="baseTriangle">How long is the base.</label>
+                            <input type="number" id="baseTriangle">
+                        </div>
+                        <div>
+                            <label for="heightTriangle">How long is height.</label>
+                            <input type="number" id="heightTriangle">
+                        </div>
+
+                    </div>
+
+                    <p id="perimeterTriangle"></p>
+                    <p id="AreaTriangle"></p>
+                    <div>
+                        <button type="button" onclick="perimeterTriangle()">Perimeter</button>
+                        <button type="button" onclick="areaTriangle()">Area</button>
+                        <button type="button" onclick="resetForm('triangleForm')">Reset</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
